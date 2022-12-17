@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(24, 104, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper{
+    background-color: aliceblue;
+}
+.wrapper h1{
+    color: rgb(15, 160, 218);
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+.wrapper .input-part{
+    margin: 40px;
+}
+.wrapper .input-part :where(button,input){
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.wrapper .input-part input{
+    margin-bottom: 5px;
+   
+}
+.wrapper .input-part button{
+    background-color: rgb(15, 160, 218);
+    color: white;
+    cursor: pointer;
+}
+.wrapper .input-part .ui-info{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+.wrapper .input-part .ui-info.pending{
+    background-color: rgb(18, 189, 212);
+    
+}
+.wrapper .input-part .ui-info.error{
+    background-color: rgb(228, 42, 18);
+    
+}
+.search{
+    margin-bottom: 10px;
+}
+.wrapper .info-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.wrapper .info-part.active{
+    display: flex;
+}
+.info-part .city-name{
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: .2rem 0;
+}
+.temp{
+    font-size: 3.3rem;
+    font-weight: bold;
+    padding:2rem;
+    border-bottom: 2px dashed black;
+}
+.feels{
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding:1rem;
+    border-bottom: 1px solid #ccc;
+    width:100%;
+    text-align: center;
+}
+.bottom-info{
+ display: flex;
+ justify-content: flex-start;
+}
+.num1,.num2{
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+.num1{
+    border-right: 1px solid #ccc;
+}
